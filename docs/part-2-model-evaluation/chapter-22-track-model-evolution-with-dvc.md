@@ -88,7 +88,7 @@ working directory.
 !!! note
 
     Remember? You did set the parameters, metrics and plots in the previous chapter:
-    [Chapter 1.4: Reproduce the ML experiment with DVC](./chapter-14-reproduce-the-ml-experiment-with-dvc.md).
+    [Chapter 2.1: Reproduce the ML experiment with DVC](./chapter-21-reproduce-the-ml-experiment-with-dvc.md).
 
 #### Compare the parameters difference
 
