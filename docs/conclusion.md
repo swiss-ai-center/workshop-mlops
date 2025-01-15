@@ -10,16 +10,6 @@ Let's take the time to make a summary of what you have done.
 
 ## Summary of what you have done
 
-- [x] The codebase can be shared among the developers
-
-Thanks to Git, the codebase can be shared and improved collectively among the
-developers.
-
-- [x] The dataset can be shared among the developers
-
-Thanks to DVC, the dataset can be shared and improved collectively among the
-developers.
-
 - [x] The model can be reproduced
 
 Thanks to DVC, the steps to create the model are documented and can be executed
@@ -39,21 +29,6 @@ visualized before merging them.
 
 Thanks to BentoML, the model can be served and be used outside of the experiment
 context.
-
-- [x] The model can be deployed and accessed on Kubernetes
-
-Thanks to BentoML, the model can be deployed and be accessed on a Kubernetes
-server.
-
-- [x] The model can be trained on a Kubernetes pod
-
-Thanks to a self-hosted runner, the model can be trained on specialized hardware
-on a Kubernetes pod.
-
-- [x] The model performance can be improved by retraining with additional data.
-
-Thanks to Label Studio, additional and high-quality training data can be used to
-retrain the model.
 
 ## End of your journey
 

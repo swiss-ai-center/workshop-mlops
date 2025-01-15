@@ -18,7 +18,7 @@ nav:
       - "Chapter 1.4 - Reproduce the ML experiment with DVC": part-1-local-training-and-model-evaluation/chapter-14-reproduce-the-ml-experiment-with-dvc.md
       - "Chapter 1.5 - Track model evolution with DVC": part-1-local-training-and-model-evaluation/chapter-15-track-model-evolution-with-dvc.md
       - "Conclusion": part-1-local-training-and-model-evaluation/conclusion.md
-  - 🚚 Serve and deploy the model:
+  - 🚚 Serve the model:
       - "Introduction": part-3-serve-and-deploy-the-model/introduction.md
       - "Chapter 3.1 - Save and load the model with BentoML": part-3-serve-and-deploy-the-model/chapter-31-save-and-load-the-model-with-bentoml.md
       - "Chapter 3.2 - Serve the model locally with BentoML": part-3-serve-and-deploy-the-model/chapter-32-serve-the-model-locally-with-bentoml.md
