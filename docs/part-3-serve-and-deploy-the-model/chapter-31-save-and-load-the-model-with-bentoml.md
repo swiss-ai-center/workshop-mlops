@@ -23,25 +23,11 @@ of this chapter:
 
 ```mermaid
 flowchart TB
-    dot_dvc[(.dvc)] <-->|dvc pull
-                         dvc push| s3_storage[(S3 Storage)]
-    dot_git[(.git)] <-->|git pull
-                         git push| gitGraph[Git Remote]
     workspaceGraph <-....-> dot_git
     data[data/raw]
-    subgraph remoteGraph[REMOTE]
-        s3_storage
-        subgraph gitGraph[Git Remote]
-            repository[(Repository)] --> action[Action]
-            action --> |dvc pull
-                        dvc repro
-                        cml publish|request[PR]
-            request --> repository[(Repository)]
-        end
-    end
     subgraph cacheGraph[CACHE]
-        dot_dvc
-        dot_git
+        dot_dvc[(.dvc)]
+        dot_git[(.git)]
     end
     subgraph workspaceGraph[WORKSPACE]
         data --> code[*.py]
@@ -64,20 +50,12 @@ flowchart TB
     style dot_dvc opacity:0.4,color:#7f7f7f80
     style code opacity:0.4,color:#7f7f7f80
     style params opacity:0.4,color:#7f7f7f80
-    style s3_storage opacity:0.4,color:#7f7f7f80
-    style repository opacity:0.4,color:#7f7f7f80
-    style action opacity:0.4,color:#7f7f7f80
-    style request opacity:0.4,color:#7f7f7f80
-    style remoteGraph opacity:0.4,color:#7f7f7f80
-    style gitGraph opacity:0.4,color:#7f7f7f80
     linkStyle 0 opacity:0.4,color:#7f7f7f80
     linkStyle 1 opacity:0.4,color:#7f7f7f80
     linkStyle 2 opacity:0.4,color:#7f7f7f80
     linkStyle 3 opacity:0.4,color:#7f7f7f80
     linkStyle 4 opacity:0.4,color:#7f7f7f80
     linkStyle 5 opacity:0.4,color:#7f7f7f80
-    linkStyle 6 opacity:0.4,color:#7f7f7f80
-    linkStyle 7 opacity:0.4,color:#7f7f7f80
 ```
 
 ## Steps
@@ -91,7 +69,7 @@ support image processing:
 tensorflow==2.17.1
 matplotlib==3.9.3
 pyyaml==6.0.2
-dvc[gs]==3.58.0
+dvc==3.58.0
 bentoml==1.3.15
 pillow==11.0.0
 ```
@@ -113,7 +91,7 @@ index 4b8d3d9..d584cca 100644
 @@ -2,3 +2,5 @@ tensorflow==2.17.1
  matplotlib==3.9.3
  pyyaml==6.0.2
- dvc[gs]==3.58.0
+ dvc==3.58.0
 +bentoml==1.3.15
 +pillow==11.0.0
 ```
@@ -669,9 +647,6 @@ dvc push
 
 # Commit the changes
 git commit -m "Use BentoML ton save and load the model"
-
-# Push the changes
-git push
 ```
 
 ## Summary

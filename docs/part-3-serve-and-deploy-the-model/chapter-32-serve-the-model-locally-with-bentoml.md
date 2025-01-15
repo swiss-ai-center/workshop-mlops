@@ -17,23 +17,11 @@ of this chapter:
 
 ```mermaid
 flowchart TB
-    dot_dvc[(.dvc)] <-->|dvc pull
-                         dvc push| s3_storage[(S3 Storage)]
-    dot_git[(.git)] <-->|git pull
-                         git push| gitGraph[Git Remote]
     workspaceGraph <-....-> dot_git
     data[data/raw]
-    subgraph remoteGraph[REMOTE]
-        s3_storage
-        subgraph gitGraph[Git Remote]
-            repository[(Repository)] --> action[Action]
-            action[Action] --> |...|request[PR]
-            request --> repository[(Repository)]
-        end
-    end
     subgraph cacheGraph[CACHE]
-        dot_dvc
-        dot_git
+        dot_dvc[(.dvc)]
+        dot_git[(.git)]
     end
     subgraph workspaceGraph[WORKSPACE]
         data --> code[*.py]
@@ -60,12 +48,6 @@ flowchart TB
     style dot_dvc opacity:0.4,color:#7f7f7f80
     style code opacity:0.4,color:#7f7f7f80
     style params opacity:0.4,color:#7f7f7f80
-    style s3_storage opacity:0.4,color:#7f7f7f80
-    style repository opacity:0.4,color:#7f7f7f80
-    style action opacity:0.4,color:#7f7f7f80
-    style request opacity:0.4,color:#7f7f7f80
-    style remoteGraph opacity:0.4,color:#7f7f7f80
-    style gitGraph opacity:0.4,color:#7f7f7f80
     linkStyle 0 opacity:0.4,color:#7f7f7f80
     linkStyle 1 opacity:0.4,color:#7f7f7f80
     linkStyle 2 opacity:0.4,color:#7f7f7f80
@@ -74,9 +56,6 @@ flowchart TB
     linkStyle 5 opacity:0.4,color:#7f7f7f80
     linkStyle 6 opacity:0.4,color:#7f7f7f80
     linkStyle 7 opacity:0.4,color:#7f7f7f80
-    linkStyle 10 opacity:0.4,color:#7f7f7f80
-    linkStyle 11 opacity:0.4,color:#7f7f7f80
-    linkStyle 12 opacity:0.4,color:#7f7f7f80
 ```
 
 ## Steps
@@ -289,9 +268,6 @@ Commit the changes to Git.
 ```sh title="Execute the following command(s) in a terminal"
 # Commit the changes
 git commit -m "Use BentoML to serve the model locally"
-
-# Push the changes
-git push
 ```
 
 ### Check the results

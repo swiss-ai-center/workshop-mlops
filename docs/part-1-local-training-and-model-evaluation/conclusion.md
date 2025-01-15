@@ -37,8 +37,3 @@ flowchart TB
         params <-.-> dot_dvc
     end
 ```
-
-Do not forget to [Clean up](./clean-up.md) if you want to stop here or continue
-with
-[Part 2 - Move to the cloud](../part-2-move-the-model-to-the-cloud/introduction.md)
-of the MLOps guide!

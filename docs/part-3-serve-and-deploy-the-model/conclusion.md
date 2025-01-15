@@ -92,11 +92,3 @@ flowchart TB
 
 The main goal of the MLOps process is to ensure that the model is reproducible,
 reliable and can be used in production. This goal is now achieved.
-
-The next part is an improvement of the MLOps process. You will learn how to
-label new data and retrain the model using Label Studio.
-
-Do not forget to [Clean up](./clean-up.md) if you want to stop here or continue
-with
-[Part 4 - Labeling the data and retrain](../part-4-labeling-the-data-and-retrain/introduction.md)
-of the MLOps guide!
