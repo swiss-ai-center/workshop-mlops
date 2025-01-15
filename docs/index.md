@@ -1,6 +1,6 @@
 ---
 template: overrides/home.html
-title: A guide to MLOps
+title: AI Days@HES-SO Workshop MLOps
 hide:
   - navigation
   - toc

@@ -1,11 +1,11 @@
-repo_url: https://github.com/swiss-ai-center/a-guide-to-mlops
-repo_name: swiss-ai-center/a-guide-to-mlops
-site_name: A guide to MLOps
+repo_url: https://github.com/swiss-ai-center/workshop-mlops
+repo_name: swiss-ai-center/workshop-mlops
+site_name: AI Days@HES-SO Workshop MLOps
 site_author: Swiss AI Center contributors
-site_url: https://mlops.swiss-ai-center.ch/
+site_url: https://swiss-ai-center.github.io/workshop-mlops/
 site_description: >-
-  A simple yet complete guide to MLOps tools and practices - from a conventional way to a modern approach of working with ML projects.
-copyright: Copyright &copy; 2022 - 2025 Swiss AI Center
+  Workshop AI Days@HES-SO Machine Learning Operations - MLOps
+copyright: Copyright &copy; 2025 Swiss AI Center
 nav:
   - 🏁 Introduction:
       - "Syllabus": syllabus.md
