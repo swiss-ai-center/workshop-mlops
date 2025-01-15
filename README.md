@@ -1,8 +1,8 @@
-# A guide to MLOps
+# AI Days@HES-SO MLOps Workshop
 
-A simple yet complete guide to MLOps tools and practices - from a conventional
+A simple workshop support to MLOps tools and practices - from a conventional
 way to a modern approach of working with ML projects. Website available at
-<https://mlops.swiss-ai-center.ch>.
+<https://swiss-ai-center.github.io/workshop-mlops/>.
 
 ## Overview
 
