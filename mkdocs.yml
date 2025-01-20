@@ -8,6 +8,8 @@ nav:
   - 🏁 Introduction:
       - "Syllabus": syllabus.md
       - "Concept": concept.md
+      - "Installing WSL 2": wsl2.md
+      - "Commands": commands.md
   - 🏠 Local training:
       - "Introduction": part-1-local-training/introduction.md
       - "Chapter 1.1 - Run a simple ML experiment with Jupyter Notebook": part-1-local-training/chapter-11-run-a-simple-ml-experiment-with-jupyter-notebook.md

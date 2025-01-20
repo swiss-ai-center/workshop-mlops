@@ -6,8 +6,8 @@ title: "Part 2 - Conclusion"
 
 Congratulations! You did it!
 
-In this second part, you were able to reproduce the ML experiment with DVC and track model
-evolution with DVC.
+In this second part, you were able to reproduce the ML experiment with DVC and
+track model evolution with DVC.
 
 The following diagram illustrates the bricks you set up at the end of this part.
 

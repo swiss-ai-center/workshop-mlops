@@ -10,6 +10,5 @@ Learn how to evaluate a model using :simple-dvc: DVC.
 
 This guide has been written with :simple-apple: macOS and :simple-linux: Linux
 operating systems in mind. If you use :fontawesome-brands-windows: Windows, you
-might encounter issues. Please use the
-[Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/)
+might encounter issues. Please use the [Windows Subsystem for Linux](../wsl2.md)
 (WSL 2) for optimal results.

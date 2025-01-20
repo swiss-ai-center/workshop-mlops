@@ -48,6 +48,5 @@ flowchart TB
     end
 ```
 
-
 The main goal of the MLOps process is to ensure that the model is reproducible,
 reliable and can be used in production. This goal is now achieved.
