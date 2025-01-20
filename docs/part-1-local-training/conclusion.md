@@ -7,8 +7,8 @@ title: "Part 1 - Conclusion"
 Congratulations! You did it!
 
 In this first part, you were able to run a simple ML experiment with Jupyter
-Notebook, adapt and move the Jupyter Notebook to Python scripts, and initialize Git
-and DVC for local training.
+Notebook, adapt and move the Jupyter Notebook to Python scripts, and initialize
+Git and DVC for local training.
 
 The following diagram illustrates the bricks you set up at the end of this part.
 
