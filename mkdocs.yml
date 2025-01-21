@@ -8,6 +8,7 @@ nav:
   - 🏁 Introduction:
       - "Syllabus": syllabus.md
       - "Concept": concept.md
+      - "Tools": tools.md
       - "Installing WSL 2": wsl2.md
       - "Commands": commands.md
   - 🏠 Local training:
