@@ -8,8 +8,7 @@ Congratulations! You did it!
 
 In this third part, you were able to move the model outside of the experiment
 context. The model is now saved and loaded with BentoML. You can serve the model
-locally and deploy it on Kubernetes. The model is also retrained on a Kubernetes
-pod.
+locally.
 
 The model is now ready to be used in production.
 

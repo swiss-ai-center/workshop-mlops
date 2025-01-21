@@ -7,17 +7,14 @@ sufficient for production. In this chapter, you will learn how to build and
 publish the model with [:simple-bentoml: BentoML](../tools.md) and
 [:simple-docker: Docker](../tools.md).
 
-This will allow to share the model with others and deploy it on a Kubernetes in
-a later chapter.
+This will allow to share the model with others and deploy it later in a
+production environment.
 
 In this chapter, you will learn how to:
 
 1. Create a BentoML model artifact
 2. Containerize the model artifact with BentoML and Docker
 3. Test the containerized model artifact by serving it locally with Docker
-4. Create a container registry that will serve as your model registry
-5. Publish the containerized model artifact Docker image to the container
-   registry
 
 The following diagram illustrates the control flow of the experiment at the end
 of this chapter:
@@ -314,7 +311,5 @@ In this chapter, you have successfully:
 
 Highly inspired by:
 
-- [_Connecting a repository to a package_ - docs.github.com](https://docs.github.com/en/packages/learn-github-packages/connecting-a-repository-to-a-package)
-- [_Working with the Container registry_ - docs.github.com](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry)
 - [_Containerization_ - docs.bentoml.com](https://docs.bentoml.com/en/latest/guides/containerization.html)
 - [_Build options_ - docs.bentoml.com](https://docs.bentoml.com/en/latest/guides/build-options.html)
