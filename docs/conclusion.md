@@ -13,15 +13,9 @@ Let's take the time to make a summary of what you have done.
 Thanks to DVC, the steps to create the model are documented and can be executed
 in order to reproduce the model.
 
-- [x] The experiment can be executed on a clean machine
-
-Thanks to the CI/CD pipeline, the experiment can be executed on a clean machine.
-Erasing the "but it works on my machine" issue.
-
 - [x]  The changes done to a model can be tracked
 
-Thanks to DVC and CML, the changes done to a model can be tracked, discussed and
-visualized before merging them.
+Thanks to DVC, the changes done to a model can be tracked.
 
 - [x] The model can be used outside of the experiment context
 
