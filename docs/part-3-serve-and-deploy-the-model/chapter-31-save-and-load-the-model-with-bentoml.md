@@ -638,14 +638,11 @@ Changes to be committed:
     modified:   src/train.py
 ```
 
-### Commit the changes to DVC and Git
+### Commit the changes to Git
 
-Commit the changes to DVC and Git:
+Commit the changes to Git:
 
 ```sh title="Execute the following command(s) in a terminal"
-# Upload the experiment data, model and cache to the remote bucket
-dvc push
-
 # Commit the changes
 git commit -m "Use BentoML ton save and load the model"
 ```
